@@ -1,0 +1,119 @@
+/*
+ * These hover-margin's don't work for some reason
+ * 0 - $spacing - $border
+ * ($spacing + $border) * -1
+*/
+body {
+    background-color: #20826c;
+  }
+  
+nav {
+    padding: 40px;
+}
+  
+nav li {
+    float: left;
+    font-size: 2em;
+    margin-right: 40px;
+    line-height: 80px;
+    position: relative;
+    text-align: center;
+}
+nav li a {
+    background-color: #fff;
+    color: #20826c;
+    display: block;
+    height: 80px;
+    position: relative;
+    text-decoration: none;
+    width: 80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s;
+}
+nav li a i {
+    position: relative;
+    z-index: 1;
+}
+nav li a .inner {
+    background-color: #20826c;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+nav li a:hover {
+    color: #fff;
+}
+nav li a:hover .inner {
+    height: 76px;
+    margin-left: -38px;
+    margin-top: -38px;
+    width: 76px;
+}
+
+button {
+    font-size: 1.6rem;
+    width: 80%;
+    max-width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px aliceblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+button:hover {
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button span.inner {
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+button:hover span.inner {
+    width: 200%;
+    height: 200%;
+    opacity: 100;
+
+}
+
+button i{
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s;
+}
+
+button:hover i{
+    color:white;
+}

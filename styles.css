@@ -57,6 +57,7 @@ main{
     box-shadow:0 0 0 2px rgba(0, 0, 0, 0.2),0px 0px 20px #b1cfeb;
     outline: none;
     background-clip: padding-box;
+    margin-bottom: 20px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -74,23 +75,74 @@ main{
     transform: scale(1.2);
 }
 
-button{
-    font-size: 1.5rem;
-    width:80%;
+button {
+    font-size: 1.6rem;
+    width: 80%;
     max-width: 200px;
-    padding:8px;
+    padding: 8px;
     border-radius: 20px;
     background-color: #ffffff;
     transition: transform 0.5s ease-in-out;
     box-shadow: 0px 0px 10px aliceblue;
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 
-button:hover{
+button:hover {
+    color: white;
     transform: scale(1.2);
+    cursor: pointer;
+}
+
+button span.inner {
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+button:hover span.inner {
+    width: 200%;
+    height: 200%;
+    opacity: 100;
+
+}
+
+button i{
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+button:hover i{
+    color:white;
 }
 
 
+#gridSizeValue{
+    color:white; 
+    font-size: 1.75rem;
+    text-shadow: 3px 3px 6px #93ceff;
+    margin-top: 20px;
+}
 
+
+input[type="range"]{
+    appearance: auto;
+    color: rgb(157, 150, 142);
+    accent-color: white;
+    cursor: pointer;
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
 
 
 
