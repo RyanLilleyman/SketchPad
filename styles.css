@@ -11,7 +11,8 @@ body{
     color:white;
     display: flex;
     justify-content: center;
-    margin:50px auto;
+    margin-top: 90px;
+    margin-bottom: 70px;
     font-size: 10rem;
     box-shadow: aliceblue;
     text-shadow: 1px 1px 17px #b1cfeb;
@@ -28,11 +29,33 @@ main{
     background-color: white;
     width: 960px;
     height:960px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
     margin-left: 250px;
-    box-shadow: 0px 0px 17px #b1cfeb;
+    box-shadow: 0px 0px 20px 5px #b1cfeb;
+    
 }
+
+.gridSquare{
+    cursor: crosshair;
+}
+
+.gridSquare-noOutline{
+    outline: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .settings{
     display: flex;
@@ -97,22 +120,20 @@ button:hover {
 
 button span.inner {
     display: block;
-    width: 0;
-    height: 0;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
     top: 50%;
     left: 50%;
     background-color: black;
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 button:hover span.inner {
-    width: 200%;
-    height: 200%;
     opacity: 100;
-
 }
 
 button i{
@@ -124,6 +145,7 @@ button i{
 button:hover i{
     color:white;
 }
+
 
 
 #gridSizeValue{
@@ -149,7 +171,7 @@ input[type="range"]{
 
 
 .footer{
-    margin-top:100px;
+    margin-top:80px;
 }
 
 a{

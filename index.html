@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
     
     <title>Sketchy</title>
 </head>
@@ -21,10 +22,6 @@
                 <span class="inner"></span>
                 <i>Space Mode</i>
             </button>
-            <button id="rainbow">
-                <span class="inner"></span>
-                <i>Rainbow</i>
-            </button>
             <button id="lighten">
                 <span class="inner"></span>
                 <i>Lighten</i>
@@ -41,10 +38,13 @@
                 <span class="inner"></span>
                 <i>Clear</i>
             </button>
+            <button id="gridToggle">
+                <span class="inner"></span>
+                <i>Toggle Grid</i>
+            </button>
             <div id="gridSizeValue" class="">16 x 16</div>
-            <input type="range" value="16" min="1" max="100">
+            <input class= "rangeFinder" type="range" value="16" min="1" max="64">
         </div>
-        
     </main>
     
     <div class="footer"><a href="https://github.com/TomNdPop">
