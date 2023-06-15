@@ -64,8 +64,8 @@ main{
 }
 
 #color{
-    width: 100px;
-    height: 100px;
+    min-width: 10vh;
+    min-height: 10vh;
     border-radius: 50%;
     border: none;
     background: none;
