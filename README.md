@@ -6,7 +6,9 @@ The Space Sketch Pad is a simple and intuitive drawing app that lets you create 
 
 ## How to Use
 
-1. Clone the repository or download the zip file.
+Click the live link underneath About!
+Or,
+1. Clone the repository .
 2. Open the `index.html` file in your browser.
 3. Start drawing! Click and drag your mouse over the grid to color the cells. The longer you press, the brighter the stars will shine.
 
