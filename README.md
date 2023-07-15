@@ -4,6 +4,8 @@
 
 The Space Sketch Pad is a simple and intuitive drawing app that lets you create stellar art right in your browser. Created using HTML, CSS, and JavaScript, this interactive sketch pad lets you paint with stars.
 
+![Project Banner](https://github.com/RyanLilleyman/SketchPad/blob/main/Screencast-from-07-15-2023-04_55_46-PM.gif)
+
 ## How to Use
 
 Click the live link underneath About!
